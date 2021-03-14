@@ -20,8 +20,8 @@ public class CosmeticLoader : MonoBehaviour
     private List<GameObject> ridableObjects = new List<GameObject>();
     private List<GameObject> playerObjects = new List<GameObject>();
     
-    private List<Sprite> rideableSprites = new List<Sprite>();
-    private List<Sprite> playerSprites = new List<Sprite>();
+    private List<Image> rideableSprites = new List<Image>();
+    private List<Image> playerSprites = new List<Image>();
     
 
     private void Start()
@@ -31,8 +31,8 @@ public class CosmeticLoader : MonoBehaviour
         playerObjects = Resources.LoadAll<GameObject>(filePathToCosmetics + "/" + playerFolderName).ToList();
 
         //obtain sprites
-        rideableSprites = ridableObjects.Select(ridable => ridable.GetComponent<Sprite>()).ToList();
-        playerSprites = playerObjects.Select(player => player.GetComponent<Sprite>()).ToList();
+        rideableSprites = ridableObjects.Select(ridable => ridable.GetComponent<Image>()).ToList();
+        playerSprites = playerObjects.Select(player => player.GetComponent<Image>()).ToList();
         
         //Build UI menu - Add sprites to buttons - Add event to select correct cosmetics
         for (var i = 0; i < ridableObjects.Count; i++)
@@ -45,7 +45,7 @@ public class CosmeticLoader : MonoBehaviour
             }
             else
             {
-                ridableButtonTemplate.image.sprite = rideableSprites[i];
+                ridableButtonTemplate.image.sprite = rideableSprites[i].sprite;
                 //btn.onClick.AddListener(); set player rider model
             }
         }
@@ -56,12 +56,12 @@ public class CosmeticLoader : MonoBehaviour
             {
                 var btn = Instantiate(playerButtonTemplate, playerMenuParent.GetComponent<GridLayoutGroup>().transform);
                 //btn.onClick.AddListener(); set player rider model
-                //btn.image.sprite = playerSprites[i];  
+                //btn.image.sprite = playerSprites[i].sprite;  
 
             }
             else
             {
-                playerButtonTemplate.image.sprite = playerSprites[i];
+                playerButtonTemplate.image.sprite = playerSprites[i].sprite;
                 //btn.onClick.AddListener(); set player rider model
             }
         }
