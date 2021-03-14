@@ -11,6 +11,8 @@
           <e p="MainMenuUI.cs" t="Include" />
           <e p="MenuBackButtonUI.cs" t="Include" />
           <e p="OptionsMenuUI.cs" t="Include" />
+          <e p="PlayerAudioHandler.cs" t="Include" />
+          <e p="PlayerInputHandler.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">

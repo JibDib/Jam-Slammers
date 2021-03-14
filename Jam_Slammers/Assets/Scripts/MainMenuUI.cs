@@ -1,10 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 public class MainMenuUI : MonoBehaviour
 {
+    [SerializeField] private GameObject menuToOpen;
+    [SerializeField] private GameObject mainMenu;
+    [SerializeField] private GameObject optionsMenuFirstSelected;
     public void Play()
     {
         int savedLevelIndex = 1; //open for level saving and loading - possibly
@@ -14,15 +19,11 @@ public class MainMenuUI : MonoBehaviour
         SceneManager.LoadScene(levelToLoad);
     }
 
-    public void OpenMenu(GameObject menuToOpen, GameObject currentMenu = null)
+    public void OpenMenu()
     {
         menuToOpen.SetActive(true);
-        
-        //close currently active menu
-        if (currentMenu != null)
-        {
-            currentMenu.SetActive(false);
-        }
+        mainMenu.SetActive(false);
+        FindObjectOfType<EventSystem>().SetSelectedGameObject(optionsMenuFirstSelected);
     }
 
     public void ExitGame()

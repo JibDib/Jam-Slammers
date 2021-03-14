@@ -547,7 +547,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 318919573}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 604901262}
+        m_TargetAssemblyTypeName: MainMenuUI, Assembly-CSharp
+        m_MethodName: OpenMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &318919573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1190,6 +1202,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb01dc60b1e0e0e4a8f1237e2a4a96b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuToOpen: {fileID: 1233265503}
+  mainMenu: {fileID: 2013012770}
+  optionsMenuFirstSelected: {fileID: 1852250523}
 --- !u!1 &665448451
 GameObject:
   m_ObjectHideFlags: 0
@@ -1504,7 +1519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 542759886}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &929427330
@@ -1838,6 +1853,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuToClose: {fileID: 1233265503}
   menuToOpen: {fileID: 2013012770}
+  firstSelectedOnReturn: {fileID: 318919570}
 --- !u!1 &1213885623
 GameObject:
   m_ObjectHideFlags: 0
