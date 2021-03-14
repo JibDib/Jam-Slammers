@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d61f9115-fd20-4e3e-9292-01cedb0719b9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam_Slammers/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam_Slammers/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam_Slammers/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam_Slammers/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/INPUT_TEST_SCENE.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/INPUT_TEST_SCENE.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenuUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenuUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MenuBackButtonUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MenuBackButtonUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Programmer Art/_PLAYER.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Programmer Art/_PLAYER.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerSelection/CosmeticLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerSelection/CosmeticLoader.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,11 +14,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerSelection/PlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerInputHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerAudioHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SceneManagement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MenuBackButtonUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.2/InputSystem/Utilities/PrimitiveValue.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerSelection/CosmeticLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OptionsMenuUI.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -33,6 +32,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerInputHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MenuBackButtonUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SceneManagement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerSelection/PlayerManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerSelection/CosmeticLoader.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1phmArw9I9hwM99A01mVBWRFKxf" />
@@ -77,7 +79,7 @@
       <updated>1615643559477</updated>
       <workItem from="1615643565510" duration="1658000" />
       <workItem from="1615688743383" duration="11000" />
-      <workItem from="1615688879687" duration="4687000" />
+      <workItem from="1615688879687" duration="8819000" />
     </task>
     <servers />
   </component>
