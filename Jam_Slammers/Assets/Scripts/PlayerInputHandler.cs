@@ -16,10 +16,18 @@ public class PlayerInputHandler : MonoBehaviour
     public void OnMove(InputAction.CallbackContext context)
     {
         var vec = context.ReadValue<Vector2>();
-        print($"input collected {vec}");
+        //print($"input collected {vec}");
         if (playerController != null)
         {
             playerController.SetInputVector(vec);
+        }
+    }
+
+    public void OnDash(InputAction.CallbackContext context)
+    {
+        if (playerController != null)
+        {
+            playerController.Dash();
         }
     }
 }

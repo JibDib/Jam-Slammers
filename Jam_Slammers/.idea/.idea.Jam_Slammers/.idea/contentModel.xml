@@ -10,6 +10,7 @@
           <e p="AudioManager.cs" t="Include" />
           <e p="MainMenuUI.cs" t="Include" />
           <e p="MenuBackButtonUI.cs" t="Include" />
+          <e p="MountCollision.cs" t="Include" />
           <e p="OptionsMenuUI.cs" t="Include" />
           <e p="PlayerAudioHandler.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
