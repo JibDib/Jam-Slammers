@@ -6,11 +6,21 @@ using UnityEngine.InputSystem;
 
 public class PlayerInputHandler : MonoBehaviour
 {
+    private PlayerController playerController;
+
+    private void Start()
+    {
+        playerController = GetComponent<PlayerController>();
+    }
+
     public void OnMove(InputAction.CallbackContext context)
     {
         var vec = context.ReadValue<Vector2>();
         print($"input collected {vec}");
-       // <YOUR CLASS>().SetInputVector(vec);
+        if (vec != null)
+        {
+            playerController?.SetInputVector(vec);
+        }
     }   
 
 }
