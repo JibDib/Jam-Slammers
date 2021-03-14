@@ -13,6 +13,11 @@
           <e p="OptionsMenuUI.cs" t="Include" />
           <e p="PlayerAudioHandler.cs" t="Include" />
           <e p="PlayerInputHandler.cs" t="Include" />
+          <e p="PlayerSelection" t="Include">
+            <e p="CosmeticLoader.cs" t="Include" />
+            <e p="PlayerManager.cs" t="Include" />
+          </e>
+          <e p="SceneManagement.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
