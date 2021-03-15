@@ -6,11 +6,28 @@ using UnityEngine.InputSystem;
 
 public class PlayerInputHandler : MonoBehaviour
 {
+    private PlayerController playerController;
+
+    private void Start()
+    {
+        playerController = GetComponent<PlayerController>();
+    }
+
     public void OnMove(InputAction.CallbackContext context)
     {
         var vec = context.ReadValue<Vector2>();
-        print($"input collected {vec}");
-       // <YOUR CLASS>().SetInputVector(vec);
-    }   
+        //print($"input collected {vec}");
+        if (playerController != null)
+        {
+            playerController.SetInputVector(vec);
+        }
+    }
 
+    public void OnDash(InputAction.CallbackContext context)
+    {
+        if (playerController != null)
+        {
+            playerController.Dash();
+        }
+    }
 }
