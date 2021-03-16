@@ -42,6 +42,9 @@ public class PlayerController : MonoBehaviour
         Movement();
     }
 
+    private float initAngle = -1;
+
+    private int clampAngle = 60;
     //Apply the rotation on the player's skewer according the the input given
     private void ApplyRotations()
     {
@@ -49,6 +52,27 @@ public class PlayerController : MonoBehaviour
         {
             Vector3 lookDir = inputVector.x * camTransform.right + inputVector.y * camTransform.forward;
             lookDir.y = 0;
+            
+            
+            if (initAngle == -1)
+            {
+                initAngle = Vector3.Angle(lookDir, -mount.transform.forward);
+            }
+
+            var angle = Vector3.Angle(lookDir, mount.transform.forward);
+            
+            print($"{angle - initAngle}");
+            
+            if (angle > initAngle + clampAngle)
+            {
+                return;
+            }
+
+            if (angle < -(initAngle - clampAngle))
+            {
+                return;
+            }
+            
             skewerParent.transform.rotation = Quaternion.LookRotation(lookDir);
         }
     }
