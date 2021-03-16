@@ -39,7 +39,7 @@ public class PlayerConfigurationManager : MonoBehaviour
         playerConfigs[index].isReady = true;
         if (playerConfigs.Count == MaxPlayers && playerConfigs.All(p => p.isReady == true))
         {
-            SceneManager.LoadScene(1); // define which scene to load elsewhere
+            SceneManager.LoadScene(0); // define which scene to load elsewhere
         }
     }
 
