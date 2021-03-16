@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d61f9115-fd20-4e3e-9292-01cedb0719b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MountCollision.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam_Slammers/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam_Slammers/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam_Slammers/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam_Slammers/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InputSystem.inputsettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystem.inputsettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerControls.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerControls.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Programmer Art/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Programmer Art/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerInputHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerInputHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenuUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenuUI.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,22 +21,19 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerInputHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.2/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerAudioHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MenuBackButtonUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.2/InputSystem/Utilities/PrimitiveValue.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OptionsMenuUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../THE_RPG/Assets/_Assets/Scripts/Player/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MountCollision.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MenuBackButtonUI.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/OptionsMenuUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
       <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.2/InputSystem/Utilities/PrimitiveValue.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MenuBackButtonUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SceneManagement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerSelection/PlayerManager.cs" />
@@ -53,6 +41,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerInputHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MountCollision.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerConfigurationManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuUI.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1phmArw9I9hwM99A01mVBWRFKxf" />
@@ -103,6 +93,7 @@
       <workItem from="1615688743383" duration="11000" />
       <workItem from="1615688879687" duration="8819000" />
       <workItem from="1615722153068" duration="7308000" />
+      <workItem from="1615868488396" duration="485000" />
     </task>
     <servers />
   </component>

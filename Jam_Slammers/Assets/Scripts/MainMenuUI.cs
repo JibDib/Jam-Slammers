@@ -13,10 +13,10 @@ public class MainMenuUI : MonoBehaviour
     public void Play()
     {
         int savedLevelIndex = 1; //open for level saving and loading - possibly
-        
-        
-        string levelToLoad = SceneManager.GetSceneAt(savedLevelIndex).name;
-        SceneManager.LoadScene("Level_1");
+
+
+        var levelToLoad = SceneManager.GetSceneByBuildIndex(savedLevelIndex);
+        SceneManager.LoadScene(levelToLoad.name);
     }
 
     public void OpenMenu()
