@@ -16,7 +16,7 @@ public class MainMenuUI : MonoBehaviour
         
         
         string levelToLoad = SceneManager.GetSceneAt(savedLevelIndex).name;
-        SceneManager.LoadScene(levelToLoad);
+        SceneManager.LoadScene("Level_1");
     }
 
     public void OpenMenu()
