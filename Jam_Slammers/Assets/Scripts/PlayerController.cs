@@ -56,7 +56,7 @@ public class PlayerController : MonoBehaviour
             
             if (initAngle == -1)
             {
-                initAngle = Vector3.Angle(lookDir, -mount.transform.forward);
+                initAngle = Vector3.Angle(lookDir, mount.transform.forward);
             }
 
             var angle = Vector3.Angle(lookDir, mount.transform.forward);
