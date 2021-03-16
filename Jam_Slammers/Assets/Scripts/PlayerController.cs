@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
     {
         if (inputVector != Vector2.zero)
         {
-            Vector3 lookDir = inputVector.x * camTransform.forward + inputVector.y * -camTransform.right;
+            Vector3 lookDir = inputVector.x * camTransform.right + inputVector.y * camTransform.forward;
             lookDir.y = 0;
             skewerParent.transform.rotation = Quaternion.LookRotation(lookDir);
         }
@@ -80,13 +80,13 @@ public class PlayerController : MonoBehaviour
         if (!isDashing)
         {
             mount.transform.rotation = Quaternion.Lerp(mount.transform.rotation, skewerParent.transform.rotation, rotateSpeed * Time.deltaTime);
-            Vector3 moveDir = new Vector3(mount.transform.right.x, 0,mount.transform.right.z);
+            Vector3 moveDir = new Vector3(mount.transform.forward.x, 0,mount.transform.forward.z);
             rb.velocity = moveDir * moveSpeed;
         }
         else
         {
             mount.transform.rotation = Quaternion.Lerp(mount.transform.rotation, skewerParent.transform.rotation, dashRotateSpeed * Time.deltaTime);
-            Vector3 moveDir = new Vector3(mount.transform.right.x, 0,mount.transform.right.z);
+            Vector3 moveDir = new Vector3(mount.transform.forward.x, 0,mount.transform.forward.z);
             rb.velocity = moveDir * dashMoveSpeed;
         }
     }

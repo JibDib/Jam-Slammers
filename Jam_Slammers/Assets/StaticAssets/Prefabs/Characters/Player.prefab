@@ -121,6 +121,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 0ca50e29-2d81-4995-84ee-8d445a5978cd
     m_ActionName: Movement/Dash[/XInputControllerWindows/buttonSouth]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 6d1d1b95-97d3-404f-abd0-f0234eebaf28
+    m_ActionName: Movement/Select[/XInputControllerWindows/buttonSouth,/Keyboard/enter]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Movement
@@ -323,6 +327,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 400697004554144242}
     m_Modifications:
+    - target: {fileID: 1972326085244885597, guid: 9e524ccc5f1552a4db76925432bcd042, type: 3}
+      propertyPath: skewerParent
+      value: 
+      objectReference: {fileID: 1116938865799012753}
     - target: {fileID: 2345352824337305595, guid: 9e524ccc5f1552a4db76925432bcd042, type: 3}
       propertyPath: m_Name
       value: banana

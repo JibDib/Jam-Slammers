@@ -12,7 +12,7 @@ public class MountCollision : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Wall"))
         {
-            Vector3 reflectDir = -Vector3.Reflect(transform.forward, other.GetContact(0).normal);
+            Vector3 reflectDir = Vector3.Reflect(transform.forward, other.GetContact(0).normal);
             transform.rotation = Quaternion.FromToRotation(Vector3.forward, reflectDir);
             skewerParent.rotation = Quaternion.FromToRotation(Vector3.forward, reflectDir);
         }
