@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d61f9115-fd20-4e3e-9292-01cedb0719b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerSetupMenuController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerSetupMenuController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SpawnPlayerSetupMenu.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SpawnPlayerSetupMenu.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam_Slammers/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam_Slammers/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Jam_Slammers/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Jam_Slammers/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerControls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerControls.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerControls.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerControls.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerControls.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerControls.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerSetupMenuController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerSetupMenuController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Programmer Art/SelectionRoot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Programmer Art/SelectionRoot.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Singletons/Input Manager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Singletons/Input Manager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SpawnPlayerSetupMenu.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SpawnPlayerSetupMenu.cs.meta" beforeDir="false" />
-    </list>
+    <list default="true" id="d61f9115-fd20-4e3e-9292-01cedb0719b9" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -110,7 +94,7 @@
       <workItem from="1615688879687" duration="8819000" />
       <workItem from="1615722153068" duration="7308000" />
       <workItem from="1615868488396" duration="4917000" />
-      <workItem from="1615875584278" duration="377000" />
+      <workItem from="1615875584278" duration="789000" />
     </task>
     <servers />
   </component>
