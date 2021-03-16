@@ -5,12 +5,15 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    //TODO Clamp skewer rotation to be a custom variable
     private Rigidbody rb;
+    private Transform camTransform;
+    private Vector2 inputVector;
 
     [Header("Base Movement Vars")]
     [SerializeField] private int moveSpeed;
     [SerializeField] private int rotateSpeed;
-    
+
     [Header("Dash Vars")]
     [SerializeField] private int dashMoveSpeed;
     [SerializeField] private int dashRotateSpeed;
@@ -19,7 +22,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float dashCooldown;
     [SerializeField] private bool isDashing = false;
     [SerializeField] private float dashDuration;
-    private Vector2 inputVector;
 
     [Header("Player Objects")]
     [SerializeField] private GameObject skewerParent;
@@ -30,6 +32,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        camTransform = GameObject.FindGameObjectWithTag("MainCamera").transform;
     }
 
     private void FixedUpdate()
@@ -39,12 +42,37 @@ public class PlayerController : MonoBehaviour
         Movement();
     }
 
+    private float initAngle = -1;
+
+    private int clampAngle = 60;
     //Apply the rotation on the player's skewer according the the input given
     private void ApplyRotations()
     {
         if (inputVector != Vector2.zero)
         {
-            Vector3 lookDir = new Vector3(inputVector.x, 0, inputVector.y);
+            Vector3 lookDir = inputVector.x * camTransform.right + inputVector.y * camTransform.forward;
+            lookDir.y = 0;
+            
+            
+            if (initAngle == -1)
+            {
+                initAngle = Vector3.Angle(lookDir, mount.transform.forward);
+            }
+
+            var angle = Vector3.Angle(lookDir, mount.transform.forward);
+            
+            print($"{angle - initAngle}");
+            
+            if (angle > initAngle + clampAngle)
+            {
+                return;
+            }
+
+            if (angle < -(initAngle - clampAngle))
+            {
+                return;
+            }
+            
             skewerParent.transform.rotation = Quaternion.LookRotation(lookDir);
         }
     }
@@ -76,13 +104,13 @@ public class PlayerController : MonoBehaviour
         if (!isDashing)
         {
             mount.transform.rotation = Quaternion.Lerp(mount.transform.rotation, skewerParent.transform.rotation, rotateSpeed * Time.deltaTime);
-            Vector3 moveDir = new Vector3(mount.transform.right.x, 0,mount.transform.right.z);
+            Vector3 moveDir = new Vector3(mount.transform.forward.x, 0,mount.transform.forward.z);
             rb.velocity = moveDir * moveSpeed;
         }
         else
         {
             mount.transform.rotation = Quaternion.Lerp(mount.transform.rotation, skewerParent.transform.rotation, dashRotateSpeed * Time.deltaTime);
-            Vector3 moveDir = new Vector3(mount.transform.right.x, 0,mount.transform.right.z);
+            Vector3 moveDir = new Vector3(mount.transform.forward.x, 0,mount.transform.forward.z);
             rb.velocity = moveDir * dashMoveSpeed;
         }
     }
