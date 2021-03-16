@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d61f9115-fd20-4e3e-9292-01cedb0719b9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenuUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenuUI.cs" afterDir="false" />
-    </list>
+    <list default="true" id="d61f9115-fd20-4e3e-9292-01cedb0719b9" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,8 +39,10 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerInputHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MountCollision.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerConfigurationManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/PlayerSetupMenuController.cs" />
+      <option value="$PROJECT_DIR$/Assets/SpawnPlayerSetupMenu.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerConfigurationManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1phmArw9I9hwM99A01mVBWRFKxf" />
@@ -93,7 +93,8 @@
       <workItem from="1615688743383" duration="11000" />
       <workItem from="1615688879687" duration="8819000" />
       <workItem from="1615722153068" duration="7308000" />
-      <workItem from="1615868488396" duration="485000" />
+      <workItem from="1615868488396" duration="4917000" />
+      <workItem from="1615875584278" duration="789000" />
     </task>
     <servers />
   </component>
