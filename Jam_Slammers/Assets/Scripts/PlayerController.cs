@@ -5,12 +5,15 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    //TODO Clamp skewer rotation to be a custom variable
     private Rigidbody rb;
+    private Transform camTransform;
+    private Vector2 inputVector;
 
     [Header("Base Movement Vars")]
     [SerializeField] private int moveSpeed;
     [SerializeField] private int rotateSpeed;
-    
+
     [Header("Dash Vars")]
     [SerializeField] private int dashMoveSpeed;
     [SerializeField] private int dashRotateSpeed;
@@ -19,7 +22,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float dashCooldown;
     [SerializeField] private bool isDashing = false;
     [SerializeField] private float dashDuration;
-    private Vector2 inputVector;
 
     [Header("Player Objects")]
     [SerializeField] private GameObject skewerParent;
@@ -30,6 +32,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        camTransform = GameObject.FindGameObjectWithTag("MainCamera").transform;
     }
 
     private void FixedUpdate()
@@ -44,7 +47,8 @@ public class PlayerController : MonoBehaviour
     {
         if (inputVector != Vector2.zero)
         {
-            Vector3 lookDir = new Vector3(inputVector.x, 0, inputVector.y);
+            Vector3 lookDir = inputVector.x * camTransform.forward + inputVector.y * -camTransform.right;
+            lookDir.y = 0;
             skewerParent.transform.rotation = Quaternion.LookRotation(lookDir);
         }
     }
