@@ -40,8 +40,6 @@ public class PlayerSetupMenuController : MonoBehaviour
             return;
         }
         
-        print($"Player index in PlayerSetupMenuController is: {PlayerIndex}");
-        print($"Config count at time of setting color: {PlayerConfigurationManager.Instance.playerConfigs.Count}");
         PlayerConfigurationManager.Instance.SetPlayerColor(PlayerIndex, colour);
         readyPanel.SetActive(true);
         readyButton.Select();

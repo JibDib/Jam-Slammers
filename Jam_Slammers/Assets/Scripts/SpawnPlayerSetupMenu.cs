@@ -4,22 +4,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.UI;
-using UnityEngine.Serialization;
 
 public class SpawnPlayerSetupMenu : MonoBehaviour
 {
     public GameObject playerSetupMenuPrefab;
-    public PlayerInput _playerInput;
-    private void Start()
+    public PlayerInput PlayerInput;
+    private void Awake()
     {
         var rootMenu = GameObject.FindWithTag("RootMenu");
         if (rootMenu != null)
         {
-            _playerInput = GetComponent<PlayerInput>();
             var menu = Instantiate(playerSetupMenuPrefab, rootMenu.transform);
-            _playerInput.uiInputModule = menu.GetComponentInChildren<InputSystemUIInputModule>();
-            print($"Player index in SpawnPlayerSetupMenu is: {_playerInput.playerIndex}");
-            menu.GetComponent<PlayerSetupMenuController>().SetPlayerIndex(_playerInput.playerIndex);
+            PlayerInput.uiInputModule = menu.GetComponentInChildren<InputSystemUIInputModule>();
+            menu.GetComponent<PlayerSetupMenuController>().SetPlayerIndex(PlayerInput.playerIndex);
         }
     }
 }

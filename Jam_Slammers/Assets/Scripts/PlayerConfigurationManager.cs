@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerConfigurationManager : MonoBehaviour
 {
-    public List<PlayerConfiguration> playerConfigs = new List<PlayerConfiguration>();
+    private List<PlayerConfiguration> playerConfigs;
 
     [SerializeField] private int MaxPlayers = 2;
 
@@ -20,6 +20,7 @@ public class PlayerConfigurationManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(Instance);
+            playerConfigs = new List<PlayerConfiguration>();
         }
         else if (Instance != this)
         {
@@ -29,7 +30,6 @@ public class PlayerConfigurationManager : MonoBehaviour
 
     public void SetPlayerColor(int index, Material color)
     {
-        print($"playerConfigs count = {playerConfigs.Count}");
         playerConfigs[index].playerMaterial = color;
     }
 
@@ -39,19 +39,17 @@ public class PlayerConfigurationManager : MonoBehaviour
         playerConfigs[index].isReady = true;
         if (playerConfigs.Count == MaxPlayers && playerConfigs.All(p => p.isReady == true))
         {
-            Destroy(Camera.main);
-            SceneManager.LoadScene(2); // define which scene to load elsewhere
+            SceneManager.LoadScene(0); // define which scene to load elsewhere
         }
     }
 
     public void HandlePlayerJoin(PlayerInput pi)
     {
         Debug.Log($"Player joined: {pi.playerIndex}");
-        //pi.transform.SetParent(transform);
+        pi.transform.SetParent(transform);
         if (!playerConfigs.Any(p => p.PlayerIndex == pi.playerIndex))
         {
-            Instance.playerConfigs.Add(new PlayerConfiguration(pi));
-            print($"player config count after adding: {playerConfigs.Count}");
+            playerConfigs.Add(new PlayerConfiguration(pi));
         }
     }
     
@@ -65,7 +63,7 @@ public class PlayerConfiguration
         Input = pi;
     }
 
-    public PlayerInput Input { get; private set; }
+    private PlayerInput Input { get; set; }
     public int PlayerIndex { get; set; }
     public bool isReady { get; set; }
     
