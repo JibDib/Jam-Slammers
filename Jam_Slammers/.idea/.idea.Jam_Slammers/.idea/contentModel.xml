@@ -9,6 +9,7 @@
         <e p="PlayerControls.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="AudioManager.cs" t="Include" />
+          <e p="InputManagerController.cs" t="Include" />
           <e p="MainMenuUI.cs" t="Include" />
           <e p="MenuBackButtonUI.cs" t="Include" />
           <e p="MountCollision.cs" t="Include" />
@@ -22,6 +23,7 @@
             <e p="PlayerManager.cs" t="Include" />
           </e>
           <e p="PlayerSetupMenuController.cs" t="Include" />
+          <e p="PlayerSpawnerHandler.cs" t="Include" />
           <e p="SceneManagement.cs" t="Include" />
           <e p="SkewerCollision.cs" t="Include" />
           <e p="SpawnPlayerSetupMenu.cs" t="Include" />
